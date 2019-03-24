@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = [' %help','ZG Shop','By Seif',' ZG Shop 4Ever',' %help'];
+    var setGame = [' %help','ZG Commuinty','By Seif',' ZG Commuinty 4Ever',' %help'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -960,7 +960,7 @@ client.on('message', message => {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "ZG Shop Bot";
+    let copy = "ZG Commuinty Bot";
     let request = `Requested By ${message.author.username}`;
     if (!args) return message.reply('**```يجب عليك كتابة كلمة او جملة لإرسال البرودكاست```**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
     msg.react('✅')
