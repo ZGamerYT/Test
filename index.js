@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 client.on('ready', function(){
     var ms = 10000 ;
-    var setGame = [' %help','GaMerZ Community','Have Fun !',' Iam Here For Games',' %help'];
+    var setGame = [' %help','ZG Shop','By Seif',' ZG Shop 4Ever',' %help'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -16,7 +16,7 @@ client.on('ready', function(){
         client.user.setGame(setGame[i],`http://www.twitch.tv/iXMiDo`);
     }, ms);
   console.log('---------------');
-  console.log('GaMerZ -Bot Is Online')
+  console.log('Seif Bot Is Online')
   console.log('---------------')
 });
 
@@ -419,10 +419,10 @@ client.on('message', message => {
     if (message.content === "%help") {
     let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
-  .setFooter(`© MrKayan.`, 'https://f.top4top.net/p_9515rj9d1.png')
+  .setFooter(`© Seif`, 'https://f.top4top.net/p_9515rj9d1.png')
   .setColor("#000000")
   .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3: تم الارسال الاوامر الي خاص")
-  .addField("** تم تطوير وبرمجه البوت من قبل :wrench: **","**™ » 『! PrO Mr.Kaỳan ♛.#8281 **")
+  .addField("** تم تطوير وبرمجه البوت من قبل :wrench: **","**™ » 『! Seif **")
   
   
   message.channel.sendEmbed(embed);
@@ -558,7 +558,7 @@ client.on('message', message => {
 .addField(' عدد الاعضاء ',` [${client.users.size}] `)
 .addField('الغرف ',`[${client.channels.size}]`) 
 .addField(' البنق ',`[${Date.now() - message.createdTimestamp}]`) 
-.addField(' Devolope By MrKayan ')
+.addField('By Seif ')
 .setColor('#7d2dbe')
   message.channel.sendEmbed(embed);
     }
@@ -960,7 +960,7 @@ client.on('message', message => {
     if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
   if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
     let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-    let copy = "GaMerZ Bot";
+    let copy = "ZG Shop Bot";
     let request = `Requested By ${message.author.username}`;
     if (!args) return message.reply('**```يجب عليك كتابة كلمة او جملة لإرسال البرودكاست```**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
     msg.react('✅')
